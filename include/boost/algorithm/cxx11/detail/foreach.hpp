@@ -11,7 +11,7 @@ namespace boost { namespace algorithm { namespace detail {
 	}
 
 	template<class ForwardIterator>
-	ForwardIterator prev_if_bidirectional_iterator(const ForwardIterator& i, const std::bidirectional_iterator_tag&) {return prev(i);}
+	ForwardIterator prev_if_bidirectional_iterator(const ForwardIterator& i, const std::bidirectional_iterator_tag&) {return std::prev(i);}
 
 	template<class ForwardIterator>
 	ForwardIterator prev_if_bidirectional_iterator(const ForwardIterator& i, const std::forward_iterator_tag&) {return i;}
